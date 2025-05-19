@@ -15,8 +15,8 @@ public class Main {
            
        Scanner scanner = new Scanner(System.in); 
        
-           Forma[] formas = new Forma[6];
-           
+           Forma[] formas = new Forma[6];// cria vetor para armazenar as formas
+           //armazena as formas cada uma em um indice
            formas[0] = new Circulo(5);
            formas[1] = new Quadrado(4);
            formas[2] = new Triangulo(6,7);
@@ -27,16 +27,16 @@ public class Main {
            int escolha;
            
         do{   
-           System.out.println("QUAL O TIPO DA FORMA");
+           System.out.println("QUAL O TIPO DA FORMA"); // menu para melhor visualizaçao 
            System.out.println("[1] BIDIMENSIONAL");
            System.out.println("[2] TRIDIMENSIONAL");
            System.out.println("[3] Exibir todas");
            System.out.println("Escolha:");
            escolha = scanner.nextInt();
         
-       switch (escolha) {
+       switch (escolha) {  // mostra as formas da maneira que voce preferir usando switch case e for each
            case 1 -> {
-               System.out.println("QUAL O TIPO DA FORMA");
+         
                for( Forma forma : formas){
                    
                    if (forma instanceof FormaBidimensional){
@@ -52,7 +52,7 @@ public class Main {
                        System.out.println("toString :"+ forma.toString());
                        System.out.println("Tipo: Forma Tridimensional");
                        System.out.println("Area: " + forma.obterArea());
-                       System.out.println("Volume :"+ formaTridimensional.obterVolume());
+                       System.out.println("Volume :"+ formaTridimensional.obterVolume()); // tive que usar interface para conseguir imprimir dessa forma
                        System.out.println("----");
                    }
                }   }
@@ -68,7 +68,7 @@ public class Main {
                        System.out.println("toString :"+ forma.toString());
                        System.out.println("Tipo: Forma Tridimensional");
                        System.out.println("Area: " + forma.obterArea());
-                       System.out.println("Volume :"+ formaTridimensional.obterVolume());
+                       System.out.println("Volume :"+ formaTridimensional.obterVolume());// tive que usar interface para conseguir imprimir dessa forma
                        System.out.println("----");
                    }
                }   }

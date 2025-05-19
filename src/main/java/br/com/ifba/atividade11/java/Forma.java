@@ -11,7 +11,7 @@ package br.com.ifba.atividade11.java;
  * @author Cauã
  */
 abstract class  Forma {
-    
+      // cria classe forma abstrata com mos metodos que sao utilizados em outras classes tambem abstratos 
    public abstract double obterArea();
    @Override
    public abstract String toString();

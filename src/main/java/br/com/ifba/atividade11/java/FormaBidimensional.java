@@ -15,6 +15,8 @@ abstract class FormaBidimensional extends Forma {
      return 0 ;
     }
 }
+// todas as sub classes sao filhas de FORMABIDIMENSIONAL e tem um atributo um construtor,um metodo obter area e um toString
+// unica diferenca entre elas sao as formulas que sao desenvolvidas
 class Quadrado extends FormaBidimensional{
     
     private double lado;

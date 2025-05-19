@@ -9,5 +9,6 @@ package br.com.ifba.atividade11.java;
  * @author Cauã
  */
 public interface Forma2D {
+        // foi necessaario a criaçao de intefaces para conseguir imprimir os dados corretamente
     double obterArea();
 }

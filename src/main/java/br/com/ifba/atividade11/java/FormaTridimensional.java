@@ -10,7 +10,6 @@ package br.com.ifba.atividade11.java;
  */
 abstract class FormaTridimensional extends Forma{
 
-
     public abstract double obterVolume();
 
     @Override
@@ -19,6 +18,8 @@ abstract class FormaTridimensional extends Forma{
     }
     
 }
+// todas as sub classes sao filhas de FORMA TRIDIMENSIONAL e tem um atributo um construtor,um metodo obter area um obter volume e um toString
+// unica diferenca entre elas sao as formulas que sao desenvolvidas
 class Esfera extends FormaTridimensional{
 
     private double raio;
